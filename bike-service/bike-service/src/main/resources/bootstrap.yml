@@ -4,4 +4,12 @@ spring:
   cloud:
     config:
       enabled: true
-      uri: http://localhost:8090     
+      uri: http://localhost:8090 
+  jpa:
+    show-sql: false 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/pruebamicroservicio1
+    username: root
+    password: 
+    
