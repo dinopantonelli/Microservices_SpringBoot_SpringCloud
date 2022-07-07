@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: user-servicio
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8088          
+

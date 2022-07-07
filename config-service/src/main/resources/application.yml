@@ -1,0 +1,13 @@
+server:
+      port: 8091
+spring:
+  cloud:
+    config:
+       server:
+           git:
+             default-label: config-server
+             uri : https://github.com/dinopantonelli/Microservices_SpringBoot_SpringCloud
+             search-paths: config-data
+  application:
+    name: config-service             
+          
