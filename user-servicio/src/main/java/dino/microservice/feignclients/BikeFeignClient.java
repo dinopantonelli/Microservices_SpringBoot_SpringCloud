@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import dino.microservice.model.Bikes;
 
 
-@FeignClient(name = "bike-service", url="http://localhost:8090")
+@FeignClient(name = "bike-service")
 @RequestMapping("/bikes")
 
 public interface BikeFeignClient {

@@ -48,13 +48,13 @@ public class UserService {
 		
 		
 		  public List<Cars>  getCars (int userId){          
-		        List<Cars> cars=restTemplate.getForObject("http://localhost:8089/cars/byuser/" + userId, List.class);   //aca le pasamos la url, que es el getById del Controller del proyecto Car
+		        List<Cars> cars=restTemplate.getForObject("http://car-service/cars/byuser/" + userId, List.class);   //aca le pasamos la url, que es el getById del Controller del proyecto Car
 		         return cars;
 		       }
 
 
 		  public List<Bikes>  getBikes (int userId){            
-		        List<Bikes> bikes = restTemplate.getForObject("http://localhost:8090/bikes/byuser/" + userId, List.class);   //aca le pasamos la url, que es el getById del Controller del proyecto Car
+		        List<Bikes> bikes = restTemplate.getForObject("http://bike-service/bikes/byuser/" + userId, List.class);   //aca le pasamos la url, que es el getById del Controller del proyecto Car
 		         return bikes;
 		       }
 		  
