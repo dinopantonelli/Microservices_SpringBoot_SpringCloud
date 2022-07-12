@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import dino.microservice.model.Cars;
 
-@FeignClient(name = "car-service", url="http://localhost:8089")
+@FeignClient(name = "car-service")
 @RequestMapping("/cars")
 
 public interface CarFeignClient {
